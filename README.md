@@ -1,8 +1,8 @@
 # Twitter
 
-Given an `app.js` file and a database file `twitterClone.db` consisting of five tables `user`, `follower`, `tweet`, `reply`, and `like`.
+We have an `app.js` file and a database file `twitterClone.db` consisting of five tables `user`, `follower`, `tweet`, `reply`, and `like`.
 
-Write APIs to perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
+The APIs will perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
 
 **User Table**
 
@@ -206,7 +206,7 @@ Here, if user1 follows user2 then,
 
 ### Authentication with JWT Token
 
-Write a middleware to authenticate the JWT token.
+A middleware to authenticate the JWT token.
 
 - **Scenario 1**
 
@@ -529,6 +529,4 @@ Created a Tweet
 
 Use `npm install` to install the packages.
 
-**Export the express instance using the default export syntax.**
 
-**Use Common JS module syntax.**
