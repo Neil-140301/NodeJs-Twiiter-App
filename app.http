@@ -1,0 +1,54 @@
+###
+POST http://localhost:3000/register 
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+GET http://localhost:3000/user/followers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+GET http://localhost:3000/tweets/8 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+GET http://localhost:3000/tweets/8/likes HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+GET http://localhost:3000/tweets/8/replies HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+GET http://localhost:3000/user/tweets HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+###
+POST http://localhost:3000/user/tweets HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
+
+{
+  "tweet": "Today is a beautiful day"
+}
+
+###
+DELETE http://localhost:3000/tweets/4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIxNzUzMjY4fQ.axmngpdO5K6w7cmsVGWTHPfckqFUDHH7Vkf4TJUW4zM
